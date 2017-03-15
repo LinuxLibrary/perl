@@ -8,8 +8,9 @@
 - Scalar variables stores a single value like name or word etc.
 - Arrays are list of values
 - Hashes are Key, Value pairs like dictionaries in Python
+---
 
-- ***Scalar Variables***
+#Scalar Variables
 	- We should use the variable names in perl like dollor symbol followed by a name while assigning the variable as well.
 	
 	```
@@ -96,3 +97,35 @@
         	print "Count is $COUNT\n";
 	}
 	```
+---
+
+# Arrays
+
+- Arrays are list of scalars.
+- Arrays can be defined like scalars but the arrays should start with a prefix `@`.
+- The list of scalars for an array should be defined comma separated within paranthesis `()`
+- Indexing in array starts with `0`
+- To print the contents of an array we need to call that array with a prefix `$`
+
+	```
+	@DEVOPS = ("Conf-MGMT","DVCS","CI/CD","Containers","Clusters");
+	```
+
+- To print all the contents of the array we need to call that array using `@` prefix.
+
+	```
+	print "@DEVOPS";
+	print "@DEVOPS[0..$#DEVOPS]";
+	```
+
+- If we want to print the first element of the array we can print in either of the way
+	
+	```
+	print "$DEVOPS[0]\n";
+	print "$DEVOPS[$#DEVOPS-$#DEVOPS]\n";
+	```
+
+- To get a count of number of elements in an array we need to call it with a prefix `$#`
+
+	```
+	print "LinuxLibrary has $#DEVOPS";

@@ -11,6 +11,7 @@
 ---
 
 # Scalar Variables
+
 	- We should use the variable names in perl like dollor symbol followed by a name while assigning the variable as well.
 	
 	```

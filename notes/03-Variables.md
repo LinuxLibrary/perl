@@ -1,7 +1,7 @@
 # PERL Variables
 
 - There are 3 types of variables in PERL
-	- Scalars
+	- [Scalars](# Scalar Variables)
 	- Arrays
 	- Hashes
 

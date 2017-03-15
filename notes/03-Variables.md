@@ -115,6 +115,12 @@ my $AGE = 4;
 	@DEVOPS = ("Conf-MGMT","DVCS","CI/CD","Containers","Clusters");
 	```
 
+- To get a count of number of elements in an array we need to call it with a prefix `$#`
+
+	```
+	print "LinuxLibrary has $#DEVOPS topics.";
+	```
+
 - To print all the contents of the array we need to call that array using `@` prefix.
 
 	```
@@ -128,8 +134,3 @@ my $AGE = 4;
 	print "$DEVOPS[0]\n";
 	print "$DEVOPS[$#DEVOPS-$#DEVOPS]\n";
 	```
-
-- To get a count of number of elements in an array we need to call it with a prefix `$#`
-
-	```
-	print "LinuxLibrary has $#DEVOPS";

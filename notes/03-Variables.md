@@ -82,3 +82,17 @@
 
 			- `state`
 			state declares a lexically scoped variable, just like my. However, those variables will never be reinitialized, contrary to lexical variables that are reinitialized each time their enclosing block is entered. If more than one variable is listed, the list must be placed in parentheses. With a parenthesised list, undef can be used as a dummy placeholder. However, since initialization of state variables in list context is currently not possible this would serve no purpose.
+
+	- The code which should be interpretted seperately which has some variables with same names we are using in the current code need to be seperated into a block. Everything declared in that block will just applies to that block only. 
+
+	```
+	# Block Definition
+	{
+	my $FIRSTNAME = "LinuxLibrary";
+	my $AGE = 4;
+	
+	        print "Firstname in block is: $FIRSTNAME\n";
+	        print "$FIRSTNAME's age is $AGE\n";
+        	print "Count is $COUNT\n";
+	}
+	```

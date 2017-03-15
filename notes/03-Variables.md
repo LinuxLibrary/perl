@@ -2,7 +2,7 @@
 
 - There are 3 types of variables in PERL
 	- [Scalars](https://github.com/LinuxLibrary/perl/blob/master/notes/03-Variables.md#scalar-variables)
-	- Arrays
+	- [Arrays](https://github.com/LinuxLibrary/perl/blob/master/notes/03-Variables.md#arrays)
 	- Hashes
 
 - Scalar variables stores a single value like name or word etc.

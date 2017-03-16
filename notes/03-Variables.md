@@ -3,7 +3,7 @@
 - There are 3 types of variables in PERL
 	- [Scalars](/notes/03-Variables.md#scalar-variables)
 	- [Arrays](/notes/03-Variables.md#arrays)
-	- Hashes
+	- [Hashes](/notes/03-Variables.md#hashes)
 
 - Scalar variables stores a single value like name or word etc.
 - Arrays are list of values
@@ -134,3 +134,56 @@ my $AGE = 4;
 	print "$DEVOPS[0]\n";
 	print "$DEVOPS[$#DEVOPS-$#DEVOPS]\n";
 	```
+
+---
+
+# Hashes
+
+- Hashes are Key/Value pairs
+- Hashes can be defined with a prefix of `%`
+- The keys and values can be separated by either `,` or `=>`
+- What ever the separator we are using but one thing we should keep in mind about this hashes is we should have a even number of the total number of key and values. Means 1 value mapped to 1 key means a total of 2 which is even.
+- Below are some examples or declaring these hashes.
+
+```
+my %COURSES = ("ConfMGMT" => "Ansible", "DVCS" => "GitHub", "CICD" => "Jenkins", "Containers" => "Docker", "Clusters" => "Swarm");
+```
+
+```
+my %COURSES2 = ("ConfMGMT" , "Ansible", "DVCS" , "GitHub", "CICD" , "Jenkins", "Containers" , "Docker", "Clusters" , "Swarm");
+```
+
+```
+my %COURSES3 = (
+                ConfMGMT => "Ansible",
+                DVCS => "GitHub",
+                CICD => "Jenkins",
+                Containers => "Docker",
+                Clusters => "Swarm"
+                );
+```
+
+```
+my %COURSES4 = (
+                "ConfMGMT" , "Ansible",
+                "DVCS" , "GitHub",
+                "CICD" , "Jenkins",
+                "Containers" , "Docker",
+                "Clusters" , "Swarm"
+                );
+```
+
+- We can assign the either keys or values of a hash to a new array.
+
+	- Assigning keys of COURSES3 to GROUPS1
+
+	```
+	our @GROUPS1 = keys %COURSES3;
+	```
+
+	- Assigning values of  COURSES3 to CONCEPTS1
+
+	```
+	our @CONCEPTS1 = values %COURSES3;
+	```
+

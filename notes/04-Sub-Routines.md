@@ -25,9 +25,10 @@ MySub1();
 
 ```
 sub MySub2 {
-        my $FIRSTNAME = @_[0];
-        my $LASTNAME = @_[1];
+        my $FIRSTNAME = $_[0];
+        my $LASTNAME = $_[1];
         print "Hello $FIRSTNAME $LASTNAME\n";
+	print "Hello @_\n";
 }
 ```
 

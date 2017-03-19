@@ -5,9 +5,11 @@
 use warnings;
 use strict;
 
-open (Han1, ">> output/PerlLog.txt") || die "Errors opening file: $!";
-my $ETCDIR = `ls -l /etc`;
+open (Han1, "> output/PerlLog.txt") || die "Errors opening file: $!";
+my $ETCDIR = `ls -l /etc | grep '^d.*rc'`;
+chomp $ETCDIR;
 my $MESSAGE = "Launching 08-Sub-Routine02.pl\n";
+chomp $MESSAGE;
 
 log_message("$MESSAGE");
 log_message("$ETCDIR");

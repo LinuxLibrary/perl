@@ -37,5 +37,3 @@ sub MySub2 {
 ```
 MySub2("Arjun","Shrinivas");
 ```
-
-

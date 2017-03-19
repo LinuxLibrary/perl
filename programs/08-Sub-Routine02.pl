@@ -5,7 +5,7 @@
 use warnings;
 use strict;
 
-open (Han1, ">> PerlLog.txt") || die "Errors opening file: $!";
+open (Han1, ">> output/PerlLog.txt") || die "Errors opening file: $!";
 my $ETCDIR = `ls -l /etc`;
 my $MESSAGE = "Launching 08-Sub-Routine02.pl\n";
 
